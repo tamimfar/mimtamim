@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+:root{
+    --bg-color:hsl(30, 54%, 90%);
+    --title-color:hsl(14, 45%, 36%);
+    --body-font__1: "Young Serif", serif;
+    --body-font__2: "Outfit", serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size:1rem;
+    font-family:var(--body-font__2);
+    font-weight:400;
+    background-color: var(--bg-color);
+    line-height: 1.8rem;
+     height: auto;
+}
+img{
+    max-width: 100%;
+}
+h1,h2{
+font-family: var(--body-font__1);
+}
+.container{
+    background-color: hsl(0, 0%, 100%);
+    max-width: 900px;
+    padding: 25px;
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%,-10%);
+    border-radius: 10px
+}
+.img__area img{
+    border-radius: 10px;
+    object-fit: cover;
+}
+.heading__area{
+    padding: 20px 0;
+}
+.heading__area h1{
+    padding: 15px 0;
+    font-size: 2.3rem;
+    font-weight: 400;
+}
+.heading__area p{
+    padding: 8px 0;
+    color:hsl(30, 10%, 34%) ;
+    font-weight: 500;
+}
+.Preparation__area{
+    background-color: hsl(330, 100%, 98%);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    margin-left: 0;
+}
+.Preparation__area h3{
+    color: hsl(332, 51%, 32%);
+    padding-bottom: 5px;
+
+}
+.Preparation__area ul{
+    padding-left: 10px;
+
+}
+.Preparation__area ul li{
+    color: hsl(30, 10%, 34%);
+    list-style: none;
+    font-weight:400;
+    display: flex;
+    align-items: flex-start;
+}
+.Preparation__area ul li::before{
+    content: '. ';
+    font-size: 40px;
+    line-height: 0.4rem;
+    color:hsl(332, 51%, 32%) ;
+    margin-right: 10px;
+
+}
+h2{
+    color: hsl(14, 45%, 36%);
+    font-weight: 500;
+    font-size: 1.8rem;
+}
+.Ingredients__area{
+    padding: 20px 0;
+}
+ 
+.Ingredients__area ul{
+    padding:10px;
+    padding-left: 10px;
+}
+.Ingredients__area ul li{
+    list-style: none;
+    color: hsl(30, 10%, 34%);
+    display: flex;
+    align-items: flex-start;
+    margin: 10px 10px;
+}
+.Ingredients__area ul li::before{
+    content: '. ';
+    font-size: 40px;
+   line-height: 10px;
+    color:hsl(14, 45%, 36%);
+    margin-right: 10px;
+}
+hr{
+    border: 0;
+     background-color: hsla(15, 4%, 18%, 0.337);
+     width: 100%;
+     height: 1px;
+}
+
+.Instructions__area{
+    padding: 35px 0;
+}
+.Instructions__area ul{
+    padding:10px;
+    padding-left: 8px;
+}
+.Instructions__area ul li{
+    list-style: none;
+    color: hsl(30, 10%, 34%);
+    font-size:15px;
+    font-weight: 500;
+    margin-left: 10px;
+    counter-increment: list;
+   display: flex;
+    align-items:flex-start;
+    margin: 10px 0;
+     
+}
+ 
+.Instructions__area ul li::before{
+    content: counter(list) '.';
+    font-size: 16px;
+    font-weight: 700;
+    color:hsl(14, 45%, 36%);
+    margin-right: 20px;
+    
+     
+}
+.Nutrition__area{
+    padding: 35px 0;
+    padding-bottom: 0;
+}
+.Nutrition__area p{
+    padding: 20px 0;
+    color: hsl(30, 10%, 34%);
+}
+.Nutrition__area table{
+     width: 100%;
+     text-align: left;
+     border-collapse: collapse;
+     
+}
+.Nutrition__area table tr{
+     width: 100%;
+     text-align: left;
+     
+     padding-left: 30px;
+ 
+}
+.Nutrition__area table tr th{
+    padding: 10px 0;
+     text-align: left;
+     padding-left: 30px;
+     font-weight: 400;
+     border-bottom: 1px solid hsla(32, 10%, 34%, 0.363);
+    
+}
+.Nutrition__area table tr td{
+     text-align: left;
+     font-weight: 600;
+     color: hsl(14, 45%, 36%);
+     border-bottom: 1px solid hsla(32, 10%, 34%, 0.363);
+}
+ #end__border_none{
+    border:none;
+ }
+ @media screen and (max-width:800px){
+    .container{
+        width:100%;
+    }
+ }
